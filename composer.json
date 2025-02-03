@@ -1,0 +1,15 @@
+{
+    "name": "asma-youcode/plateforme_youdemy",
+    "autoload": {
+        "psr-4": {
+            "classes\\": "classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Asma lachhab",
+            "email": "asmalachhab@gmail.com"
+        }
+    ],
+    "require": {}
+}
