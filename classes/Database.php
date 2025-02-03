@@ -11,13 +11,13 @@ class Database
 
     private function __construct()
     {
-        $dsn = 'mysql:host=localhost;dbname=youdemy_db';
-        $username = 'root';
+        $dsn = 'pgsql:host=localhost;dbname=youdemy';
+        $username = 'postgres';
         $password = '';
         $this->connection = new PDO($dsn, $username, $password);
         $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        // echo "Connected successfully";
+        
     }
 
     public static function getInstance()

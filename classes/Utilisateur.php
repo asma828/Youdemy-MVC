@@ -47,7 +47,7 @@ class Utilisateur{
 
     public function createNewEtudiant($objEtudiant)
     {
-        $sql = "INSERT INTO etudiants (id_utilisateur, is_baned) VALUES (:id_utilisateur,1)";
+        $sql = "INSERT INTO etudiants (id_utilisateur, is_baned) VALUES (:id_utilisateur, TRUE)";
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':id_utilisateur', $objEtudiant->id_utilisateur);
         $stmt->execute();
@@ -56,7 +56,7 @@ class Utilisateur{
 
     public function createNewEnseignant($objEnseignant)
     {
-        $sql = "INSERT INTO enseignants (id_utilisateur,is_active) VALUES (:id_utilisateur,0)";
+        $sql = "INSERT INTO enseignants (id_utilisateur,is_active) VALUES (:id_utilisateur, FALSE)";
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':id_utilisateur', $objEnseignant->id_utilisateur);
         $stmt->execute();
