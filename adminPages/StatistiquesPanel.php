@@ -120,6 +120,7 @@ if (isset($_GET['category_id'])) {
         <!-- Most Popular Course Section -->
         <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
             <h4 class="text-xl font-bold mb-4">
+                
                 <span class="text-blue-600"><?php echo $CoursPlusEtudinat['titre_cour']; ?></span> 
                 est le cours le plus étudiants: 
                 <span class="text-blue-600"><?php echo $CoursPlusEtudinat['total']; ?></span>
